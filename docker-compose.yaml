@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  nginx:
+    image: nginx
+    volumes:
+     - ./conf.d/guacamole.conf:/etc/nginx/conf.d/guacamole.conf
+    ports:
+     - "80:80"
